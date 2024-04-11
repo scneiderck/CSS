@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: #59D4EB;
+    text-align: center;
+    height: 80px;
+  }
+  
+  
+  /* Main Container */
+  
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  
+  
+  /* Container */
+  
+  .container-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Items */
+  
+  .hero {
+    flex: 1 0 40%;
+    height: 400px;
+    background-color: #D5C9E2;
+  }
+  
+  .main-content {
+    flex: 1 0 60%;
+    height: 600px;
+    background-color: #F5C546;
+  }
+  
+  .sidebar {
+    height: 500px;
+    flex: 1 0 40%;
+    background-color: #A0C263;
+    /* I DONT WANT USE THİS  MARGİN-TOP */
+    margin-top: -200px;
+  }
+  
+  .extra-content {
+    flex: 1 0 60%;
+    background-color: #898989;
+    height: 300px;
+  }
+  
+  
+  /* Container */
+  
+  .images-posts-cont {
+    display: flex;
+    height: 150px;
+  }
+  
+  
+  /* Items */
+  
+  .images {
+    flex: 1 0 70%;
+    background-color: #53B774;
+  }
+  
+  .posts {
+    flex: 1 0 30%;
+    background-color: #F3CDDD;
+  }
+  
+  
+  /* Footer */
+  
+  .footer {
+    text-align: center;
+    height: 80px;
+    background-color: #F4A540;
+  }
+  
+  @media screen and (max-width:599px) {
+    .hero {
+      flex: 1 0 100%;
+      order: 1;
+    }
+    .sidebar {
+      flex: 1 0 100%;
+      order: 2;
+    }
+    .main-content {
+      order: 3;
+    }
+    .extra-content {
+      order: 4;
+    }
+  }
